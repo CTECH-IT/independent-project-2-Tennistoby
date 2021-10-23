@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"); /*nunito*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"); /*lora*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"); /*nunito bold*/
 
 body {
   display: flex;
@@ -9,7 +10,17 @@ body {
 .topnav {
   flex: 0 1 auto;
   overflow: hidden;
-  border-bottom: 2px solid #5f5f5f;
+  border-bottom: 2px solid #979797;
+}
+
+.tab {
+  margin-top: 10px;
+}
+
+.page-title {
+  font-family: "Nunito", sans-serif;
+  color: #fa7a4a;
+  font-size: 35px;
 }
 
 .topnav a {
@@ -39,7 +50,7 @@ body {
 }
 
 .meeting-title p {
-  font-size: 4vw;
+  font-size: 50px;
   font-family: "Lora", serif;
 }
 
@@ -54,7 +65,7 @@ body {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 2vw;
   order: 0;
   padding: 0 35px;
 
@@ -76,6 +87,10 @@ body {
   transition: transform 133ms ease-in-out;
 }
 
+.thumbnail-item:hover {
+  transform: scale(1.2);
+}
+
 .thumbnail-item a {
   text-decoration: none;
 }
@@ -94,7 +109,7 @@ body {
 }
 
 .detail-image-container {
-  margin-left: 4vw;
+  margin-left: 3vw;
   flex: 0 1 auto;
   text-align: center;
 }
@@ -115,7 +130,7 @@ body {
 .image-stack__item--top {
   max-width: 300px;
   grid-row: 1;
-  grid-column: 4 / span 8;
+  grid-column: 5 / span 8;
   padding-top: 20%;
   z-index: 1;
 }
@@ -125,8 +140,37 @@ img {
   display: block;
 }
 
+.detail-image-frame {
+  transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
+}
+
 .detail-image-title {
   color: black;
   font-family: "Nunito", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
+}
+
+.hidden-detail .detail-image-container {
+  display: none;
+}
+
+.hidden-detail .thumbnail-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden-detail .thumbnail-item {
+  max-width: 80%;
+}
+
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0ms;
+}
+
+@media all and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
