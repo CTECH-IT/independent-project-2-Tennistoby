@@ -1,1 +1,132 @@
-/* Put your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"); /*nunito*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"); /*lora*/
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  flex: 0 1 auto;
+  overflow: hidden;
+  border-bottom: 2px solid #5f5f5f;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Nunito", sans-serif;
+}
+
+.main-content {
+  margin-top: 5vw;
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.meeting-title {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  margin-left: 10vw;
+}
+
+.meeting-title p {
+  font-size: 4vw;
+  font-family: "Lora", serif;
+}
+
+.gallery {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  margin-left: 20px;
+  order: 0;
+  padding: 0 35px;
+
+  list-style: none;
+  text-decoration: none;
+  overflow-x: auto;
+
+  white-space: nowrap;
+}
+
+.thumbnail-item {
+  padding-top: 15px;
+  display: block;
+  display: inline-block;
+  max-width: 90px;
+  min-width: 90px;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item a {
+  text-decoration: none;
+}
+
+.thumbnail-image {
+  display: block;
+  width: 100%;
+}
+
+.thumbnail-title {
+  color: black;
+  display: block;
+  font-size: 15px;
+  margin: 0;
+  padding-top: 0.4em;
+}
+
+.detail-image-container {
+  margin-left: 4vw;
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.image-stack {
+  display: grid;
+  max-width: 600px;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack__item--bottom {
+  min-width: 500px;
+  grid-column: 4 / -1;
+  grid-row: 1;
+}
+
+.image-stack__item--top {
+  max-width: 300px;
+  grid-row: 1;
+  grid-column: 4 / span 8;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.detail-image-title {
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+}

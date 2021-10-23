@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>My Awesome Website</title>
+    <title>Rochester Math Club</title>
     <meta name="author" content="Zoey Chen">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -11,10 +11,65 @@
   </head>
 
 <body>
-  <header>
-    <h1 class="page-title">My Awesome Website</h1>
-    <p>This is some awesome text.</p>
-  </header>
+  <div class="topnav">
+    <a href="#home"> <img alt="logo" src="images/logo.jpg" width="60" height="60"></a>
+    <a href="#about">About Us</a>
+    <a href="#theclub">The Club</a>
+    <a href="#members">Members</a>
+    <a href="#rmf">Rochester Math Festival</a>
+    <a href="#search"> <img alt="search" src="images/search.png" width="30" height="35"></a>
+  </div>
+  
+<main class="main-content">
+
+<div class="meeting-title">
+
+  <p>2021-2022<br>
+      Weekly<br>
+      Meetings<br>
+  </p>
+</div>
+
+<div class="gallery">
+
+  <div class="detail-image-container">
+    <div class="image-stack">
+      <div class="image-stack__item image-stack__item--top">
+        <img data-image-role="target" src="images/ba5.jpeg" alt="">
+        
+      </div>
+      <div class="image-stack__item image-stack__item--bottom">
+        <img src="images/background.png" alt="">
+      </div>
+    </div>
+    <p class="detail-image-title" data-image-role="title">Class BA5</p>
+  </div>
+
+
+<ul class="thumbnail-list">
+  <li class="thumbnail-item">
+      <a href="#" data-image-role="trigger" data-image-title="Class BA5" data-image-url="images/ba5.jpeg">
+          <img class="thumbnail-image" src="images/ba5.jpeg" alt="Class BA5">
+          <span class="thumbnail-title">Class BA5</span>
+      </a>
+  </li> 
+  <li class="thumbnail-item">
+    <a href="#" data-image-role="trigger" data-image-title="Class BA4" data-image-url="images/ba4.jpeg">
+        <img class="thumbnail-image" src="images/ba4.jpeg" alt="Class BA4">
+        <span class="thumbnail-title">Class BA4</span>
+    </a>
+</li>
+<li class="thumbnail-item">
+  <a href="#" data-image-role="trigger" data-image-title="Class AMC8" data-image-url="images/amc8.jpeg">
+      <img class="thumbnail-image" src="images/amc8.jpeg" alt="Class AMC8">
+      <span class="thumbnail-title">Class AMC8</span>
+  </a>
+</li>
+</ul>
+
+</div>
+
+</main>
 
   <script src="scripts/main.js"></script>
 </body>
