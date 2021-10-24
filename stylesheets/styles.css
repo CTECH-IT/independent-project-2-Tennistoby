@@ -168,9 +168,18 @@ img {
   transition: transform 0ms;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .main-content {
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .thumbnail-list {
+    flex: 0 1 auto;
+    flex-direction: row;
+    order: 2;
+    justify-content: space-between;
+    padding: 35px 0;
+    overflow-x: auto;
   }
 }
