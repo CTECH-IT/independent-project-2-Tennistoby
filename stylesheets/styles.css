@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"); /*lora*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"); /*nunito bold*/
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -29,7 +34,7 @@ body {
   text-align: center;
   padding: 20px 35px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 18px;
   font-family: "Nunito", sans-serif;
 }
 
@@ -46,16 +51,17 @@ body {
   display: flex;
   align-items: center;
   flex: 0 1 auto;
-  margin-left: 10vw;
+  margin-left: 7vw;
 }
 
-.meeting-title p {
+#three-line-text {
   font-size: 50px;
   font-family: "Lora", serif;
 }
 
 .gallery {
   flex: 1 1 auto;
+  margin-left: 2vw;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -65,14 +71,13 @@ body {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
-  margin-left: 2vw;
+  margin-left: 2.5vw;
   order: 0;
   padding: 0 35px;
 
   list-style: none;
   text-decoration: none;
   overflow-x: auto;
-
   white-space: nowrap;
 }
 
@@ -109,7 +114,6 @@ body {
 }
 
 .detail-image-container {
-  margin-left: 3vw;
   flex: 0 1 auto;
   text-align: center;
 }
@@ -168,18 +172,28 @@ img {
   transition: transform 0ms;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 956px) {
   .main-content {
     flex-direction: column;
     overflow: hidden;
   }
 
+  .gallery {
+    flex-direction: column;
+  }
   .thumbnail-list {
     flex: 0 1 auto;
     flex-direction: row;
     order: 2;
-    justify-content: space-between;
-    padding: 35px 0;
     overflow-x: auto;
+  }
+
+  .thumbnail-item {
+    padding-left: 20px;
+  }
+
+  html,
+  body {
+    height: auto;
   }
 }

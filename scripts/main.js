@@ -80,6 +80,11 @@ function addKeyPressHandler() {
     });
 }
 
+/* function adjustText() {
+    if(screen.width < 956) {
+        document.getElementById("three-line-text").style.visibility = "hidden";
+    }
+} */
 // run all the functions to link the thumbnails to the callback
 // that will update the main detail image with the thumbnail's image and title 
 initializeEvents();
