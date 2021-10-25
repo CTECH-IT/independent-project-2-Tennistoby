@@ -172,7 +172,7 @@ img {
   transition: transform 0ms;
 }
 
-@media all and (max-width: 956px) {
+@media all and (max-width: 986px) {
   .main-content {
     flex-direction: column;
     overflow: hidden;
