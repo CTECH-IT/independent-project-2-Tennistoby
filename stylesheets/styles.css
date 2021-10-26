@@ -178,6 +178,10 @@ img {
     overflow: hidden;
   }
 
+  p#three-line-text br{
+    display: none;
+  }
+
   .gallery {
     flex-direction: column;
   }
